@@ -24,7 +24,7 @@ class AreYouMadatMe(toga.App):
         login_button = toga.Button(
             "Login",
             on_press=self.login,
-            style=Pack(padding=5, width=0.5)
+            style=Pack(padding=5)
         )
 
         signup_button = toga.Button(
@@ -43,6 +43,7 @@ class AreYouMadatMe(toga.App):
 
     def login(self, widget):
         print(f"swag")
+        self.startup()
 
     def signup(self, widget):
         print(f"no swag")
