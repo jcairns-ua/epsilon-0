@@ -42,10 +42,10 @@ class AreYouMadatMe(toga.App):
         self.main_window.show()
 
     def login(self, widget):
-        print(f"Hello")
+        print(f"swag")
 
     def signup(self, widget):
-        print(f"Hello")
+        print(f"no swag")
 
 
 def main():
