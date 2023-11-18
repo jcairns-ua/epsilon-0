@@ -24,7 +24,7 @@ class AreYouMadatMe(toga.App):
         login_button = toga.Button(
             "Login",
             on_press=self.login,
-            style=Pack(padding=5)
+            style=Pack(padding=5, width=0.5)
         )
 
         signup_button = toga.Button(
