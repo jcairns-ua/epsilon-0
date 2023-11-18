@@ -41,9 +41,13 @@ class AreYouMadatMe(toga.App):
         self.main_window.content = main_box
         self.main_window.show()
 
+    def login(self):
+        #idk
+        
+        
     def login(self, widget):
         print(f"swag")
-        self.startup()
+        self.login()
 
     def signup(self, widget):
         print(f"no swag")
