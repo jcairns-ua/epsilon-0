@@ -51,42 +51,38 @@ class AreYouMadatMe(toga.App):
             "Still mad? Stay mad?",
             style=Pack(padding=(0, 5))
         )
-        self.box_login_label = toga.Box(style=Pack(direction=COLUMN, padding=5))
-        self.box_login_label.add(name_label)
-        self.main_box.add(self.box_login_label)
+        self.box_login = toga.Box(style=Pack(direction=COLUMN, padding=5))
+        self.box_login.add(name_label)
 
-        self.box_login_u_label = toga.Box(style=Pack(direction=COLUMN, padding=10))
-        self.box_login_p_u = toga.Box(style=Pack(direction=COLUMN, padding=10))
         usern_label = toga.Label(
             "username:",
             style=Pack(padding=(0, 5))
         )
         self.usern_input = toga.TextInput(style=Pack(flex=1))
-        self.box_login_u_label.add(usern_label)
-        self.box_login_p_u.add(self.usern_input)
+        self.box_login.add(usern_label)
+        self.box_login.add(self.usern_input)
 
-        self.main_box.add(self.box_login_u_label)
-        self.main_box.add(self.box_login_p_u)
-
-
-        self.box_login_p_label = toga.Box(style=Pack(direction=COLUMN, padding=10))
-        self.box_login_p_p = toga.Box(style=Pack(direction=COLUMN, padding=10))
         password_label = toga.Label(
             "password:",
             style=Pack(padding=(0, 5))
         )
         self.password_input = toga.PasswordInput()
-        self.box_login_p_label.add(password_label)
-        self.box_login_p_p.add(self.password_input)
+        self.box_login.add(password_label)
+        self.box_login.add(self.password_input)
 
-        self.main_box.add(self.box_login_p_label)
-        self.main_box.add(self.box_login_p_p)
+        self.main_box.add(self.box_login)
 
-        enter_button = toga.Button("Enter", on_press=self.enter_login, style=Pack(padding=5))
-        self.main_box.add(enter_button)
+        self.enter_button = toga.Button("Enter", on_press=self.enter_login, style=Pack(padding=5))
+        self.main_box.add(self.enter_button)
 
     def enter_login(self, widget):
         print(f"Hiiii, {self.usern_input.value} and {self.password_input.value}")
+        self.main_page(widget)
+        #call the check function returns true or false into logged
+        """
+        if logged:
+            main_page()
+        """
 
     
     def signup(self, widget):
@@ -132,11 +128,19 @@ class AreYouMadatMe(toga.App):
         self.box_login.add(self.password_input)
         self.main_box.add(self.box_login)
 
-        enter_button = toga.Button("Enter", on_press=self.enter_signin, style=Pack(padding=5))
-        self.main_box.add(enter_button)
+        self.enter_button = toga.Button("Enter", on_press=self.enter_signin, style=Pack(padding=5))
+        self.main_box.add(self.enter_button)
 
     def enter_signin(self, widget):
         print(f"Hiiii, {self.name_input.value} and {self.email_input.value} {self.usern_input.value} {self.password_input.value}")
+        self.main_page(widget)
+
+    def main_page(self, widget):
+        self.main_box.remove(self.box_login, self.enter_button)
+        next_check = toga.Label("Time Till Next Check:", style=Pack(padding=(0,5), background_color="#44344F", color="#F1C8DB"))
+        self.default_page = toga.Box(style=Pack(direction=COLUMN, padding=5))
+        self.default_page.add(next_check)
+        self.main_box.add(self.default_page)
 
 def main():
     return AreYouMadatMe()
