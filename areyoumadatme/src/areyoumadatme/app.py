@@ -47,15 +47,14 @@ class AreYouMadatMe(toga.App):
     def login(self, sender):
         self.main_box.remove(self.box)
         print("swag")
-        slay = toga.Box(style=Pack(direction=COLUMN))
         name_label = toga.Label(
             "stay mad?",
             style=Pack(padding=(0, 5))
         )
-        
-        
+        self.main_box.add(name_label)
 
     def signup(self, widget):
+        self.main_box.remove(self.box)
         print("no swag")
 
 
