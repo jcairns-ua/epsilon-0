@@ -68,6 +68,7 @@ class AreYouMadatMe(toga.App):
         self.main_box.add(self.box_login_u_label)
         self.main_box.add(self.box_login_p_u)
 
+
         self.box_login_p_label = toga.Box(style=Pack(direction=COLUMN, padding=10))
         self.box_login_p_p = toga.Box(style=Pack(direction=COLUMN, padding=10))
         password_label = toga.Label(
@@ -80,6 +81,13 @@ class AreYouMadatMe(toga.App):
 
         self.main_box.add(self.box_login_p_label)
         self.main_box.add(self.box_login_p_p)
+
+        enter_button = toga.Button("Enter", on_press=self.enter_login, style=Pack(padding=5))
+        self.main_box.add(enter_button)
+
+    def enter_login(self, widget):
+        print(f"Hiiii, {self.usern_input.value} and {self.password_input.value}")
+
     
     def signup(self, widget):
         self.main_box.remove(self.box)
@@ -124,6 +132,11 @@ class AreYouMadatMe(toga.App):
         self.box_login.add(self.password_input)
         self.main_box.add(self.box_login)
 
+        enter_button = toga.Button("Enter", on_press=self.enter_signin, style=Pack(padding=5))
+        self.main_box.add(enter_button)
+
+    def enter_signin(self, widget):
+        print(f"Hiiii, {self.name_input.value} and {self.email_input.value} {self.usern_input.value} {self.password_input.value}")
 
 def main():
     return AreYouMadatMe()
