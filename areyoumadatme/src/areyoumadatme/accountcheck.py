@@ -7,7 +7,7 @@ name,username,email,password
 def getaccounts():
     """
     opens accounts.txt, creates dictionary of all acounts
-    returns: none
+    returns: accounts
 
     accounts dict of form "username" : [name, email, password]
     """
@@ -32,24 +32,40 @@ def addaccount(accounts, name, email, username, password):
     username cannot be 'true'
     returns:
         1 : if added account successfully
-        0 : if account add failed
+        0 : if account already exists
+       -1 : if invalid name/username/password
     """
-    try:
-        #add account if username not already exists
+    
+    #add account if username not already exists
+    if ( ("," in name) or ("," in email) or ("," in password) or ("," in username) ):
+        return -1
+        
+    elif (("true"==username) or ("true"==password)):
+        return -1
+    
+    elif ( username in accounts ):
+        return 0
+    
+    else :
         accounts[username] = [name, email, password]
+        return 1
 
 
-    except KeyError:
-        #if in dictionary already
-        pass
-
-def checkaccount(username, password):
+def checkaccount(accounts, username, password):
     """
     logs user in if username exists and password matches
     returns: 
         if valid : "true"
         if username doesnt exist : username
-        if password invalid : "false"
+        if password invalid : password
     """
-    pass
+    try:
+        testpass = accounts[username]
+        if (testpass == password):
+            return "true"
+        else:
+            return password
+        
+    except KeyError:
+        return username
 
