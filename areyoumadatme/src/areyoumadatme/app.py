@@ -48,10 +48,28 @@ class AreYouMadatMe(toga.App):
         self.main_box.remove(self.box)
         print("swag")
         name_label = toga.Label(
-            "stay mad?",
+            "Still mad? Stay mad?",
             style=Pack(padding=(0, 5))
         )
-        self.main_box.add(name_label)
+        self.box_login = toga.Box(style=Pack(direction=COLUMN, padding=5))
+        self.box_login.add(name_label)
+
+        usern_label = toga.Label(
+            "username:",
+            style=Pack(padding=(0, 5))
+        )
+        self.usern_input = toga.TextInput(style=Pack(flex=1))
+        self.box_login.add(usern_label)
+        self.box_login.add(self.usern_input)
+
+        password_label = toga.Label(
+            "password:",
+            style=Pack(padding=(0, 5))
+        )
+        self.password_input = toga.PasswordInput()
+        self.box_login.add(password_label)
+        self.box_login.add(self.password_input)
+        self.main_box.add(self.box_login)
 
     def signup(self, widget):
         self.main_box.remove(self.box)
