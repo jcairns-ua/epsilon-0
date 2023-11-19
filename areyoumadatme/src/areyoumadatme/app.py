@@ -70,10 +70,49 @@ class AreYouMadatMe(toga.App):
         self.box_login.add(password_label)
         self.box_login.add(self.password_input)
         self.main_box.add(self.box_login)
-
+    
     def signup(self, widget):
         self.main_box.remove(self.box)
-        print("no swag")
+        print("swag")
+        name_label = toga.Label(
+            "Still mad? Stay mad?",
+            style=Pack(padding=(0, 5))
+        )
+        self.box_login = toga.Box(style=Pack(direction=COLUMN, padding=5))
+        self.box_login.add(name_label)
+
+        name_label = toga.Label(
+            "Name:",
+            style=Pack(padding=(0, 5))
+        )
+        self.name_input = toga.TextInput(style=Pack(flex=1))
+        self.box_login.add(name_label)
+        self.box_login.add(self.name_input)
+
+        email_label = toga.Label(
+            "Email:",
+            style=Pack(padding=(0, 5))
+        )
+        self.email_input = toga.TextInput(style=Pack(flex=1))
+        self.box_login.add(email_label)
+        self.box_login.add(self.email_input)
+
+        usern_label = toga.Label(
+            "Username:",
+            style=Pack(padding=(0, 5))
+        )
+        self.usern_input = toga.TextInput(style=Pack(flex=1))
+        self.box_login.add(usern_label)
+        self.box_login.add(self.usern_input)
+
+        password_label = toga.Label(
+            "Password:",
+            style=Pack(padding=(0, 5))
+        )
+        self.password_input = toga.PasswordInput()
+        self.box_login.add(password_label)
+        self.box_login.add(self.password_input)
+        self.main_box.add(self.box_login)
 
 
 def main():
