@@ -1,0 +1,208 @@
+Date/Time:       2023-11-18 17:01:31 
+Command line:    C:\Users\paule\beeware-tutorial\beeware-venv\Scripts\briefcase dev
+
+OS Release:      Windows 10
+OS Version:      10.0.22621
+Architecture:    AMD64
+Platform:        Windows-10-10.0.22621-SP0
+
+Python exe:      C:\Users\paule\beeware-tutorial\beeware-venv\Scripts\python.exe
+Python version:  3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)]
+Virtual env:     True
+Conda env:       False
+
+Briefcase:       0.3.16
+Target platform: windows
+Target format:   None
+
+Environment Variables:
+    ALLUSERSPROFILE=C:\ProgramData
+    APPDATA=C:\Users\paule\AppData\Roaming
+    COMMONPROGRAMFILES=C:\Program Files\Common Files
+    COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files
+    COMMONPROGRAMW6432=C:\Program Files\Common Files
+    COMPUTERNAME=PAULE-S
+    COMSPEC=C:\Windows\system32\cmd.exe
+    DRIVERDATA=C:\Windows\System32\Drivers\DriverData
+    HOMEDRIVE=C:
+    HOMEPATH=\Users\paule
+    IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABoOIKEdFEEWB4t4oQXc/owQAAAACAAAAAAAQZgAAAAEAACAAAAC1LrI33NnnUkco3QhJN9YFEe0GLd7SuTXg4ABHZE2UMgAAAAAOgAAAAAIAACAAAADwrYfKErR/Mle5w99IY/qSOecMYvZyj56DYUWg2Dh/2WAAAAA/LV2Gb57c5o7vrfgbVc/479KOYV0bW+Npx7brpUWGaewZZ8RcfnCN+E8qurzEK3EItlyRGArpoGIj1x/8oYmbAnYdbx9u4h7k5fjecET1l7jJQckOw6sOaHzl1qjTug9AAAAAgzuBJV/FBy6tcxSgeO/sBX0k6bvMsn1gtIFtbcqd/2BCbTqDtrYONHsmeuy93rpVQnEZUlpKYA4tdrNQ3LkZ2g==
+    LOCALAPPDATA=C:\Users\paule\AppData\Local
+    LOGONSERVER=\\PAULE-S
+    NUMBER_OF_PROCESSORS=20
+    ONEDRIVE=C:\Users\paule\OneDrive
+    ONEDRIVECONSUMER=C:\Users\paule\OneDrive
+    OS=Windows_NT
+    PATH=C:\Users\paule\beeware-tutorial\beeware-venv\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\paule\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\paule\AppData\Local\Programs\Python\Python311\;C:\Users\paule\AppData\Local\Microsoft\WindowsApps;;C:\Users\paule\AppData\Local\Programs\Microsoft VS Code\bin
+    PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+    PROCESSOR_ARCHITECTURE=AMD64
+    PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+    PROCESSOR_LEVEL=6
+    PROCESSOR_REVISION=9a03
+    PROGRAMDATA=C:\ProgramData
+    PROGRAMFILES=C:\Program Files
+    PROGRAMFILES(X86)=C:\Program Files (x86)
+    PROGRAMW6432=C:\Program Files
+    PSMODULEPATH=C:\Users\paule\OneDrive\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+    PUBLIC=C:\Users\Public
+    SESSIONNAME=Console
+    SYSTEMDRIVE=C:
+    SYSTEMROOT=C:\Windows
+    TEMP=C:\Users\paule\AppData\Local\Temp
+    TMP=C:\Users\paule\AppData\Local\Temp
+    USERDOMAIN=PAULE-S
+    USERDOMAIN_ROAMINGPROFILE=PAULE-S
+    USERNAME=paule
+    USERPROFILE=C:\Users\paule
+    VIRTUAL_ENV=C:\Users\paule\beeware-tutorial\beeware-venv
+    VIRTUAL_ENV_PROMPT=beeware-venv
+    WINDIR=C:\Windows
+    WSLENV=WT_SESSION:WT_PROFILE_ID:
+    WT_PROFILE_ID={61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+    WT_SESSION=a18f7032-00fb-4c48-b908-fc0a9254a9f5
+    ZES_ENABLE_SYSMAN=1
+    _OLD_VIRTUAL_PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\paule\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\paule\AppData\Local\Programs\Python\Python311\;C:\Users\paule\AppData\Local\Microsoft\WindowsApps;;C:\Users\paule\AppData\Local\Programs\Microsoft VS Code\bin
+
+Briefcase Log:
+[17:01:30]                                                                                                                                                                dev.py:228
+           [areyoumadatme] Starting in dev mode...                                                                                                                        dev.py:228
+                                                                                                                                                                   subprocess.py:711
+           >>> Running Command:                                                                                                                                    subprocess.py:712
+           >>>     'C:\Users\paule\beeware-tutorial\beeware-venv\Scripts\python.exe' -c 'import runpy,                                                             subprocess.py:713
+           sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("areyoumadatme", run_name="__main__", alter_sys=True)'                                                          
+           >>> Working Directory:                                                                                                                                  subprocess.py:720
+           >>>     C:\Users\paule                                                                                                                                  subprocess.py:721
+           >>> Environment Overrides:                                                                                                                              subprocess.py:730
+           >>>     PYTHONPATH=C:\Users\paule\OneDrive\Desktop\hackEDbeta\epsilon-0\areyoumadatme\src                                                               subprocess.py:732
+           >>>     PYTHONMALLOC=default                                                                                                                            subprocess.py:732
+           >>>     PYTHONUNBUFFERED=1                                                                                                                              subprocess.py:732
+           >>>     PYTHONDEVMODE=1                                                                                                                                 subprocess.py:732
+           >>>     PYTHONUTF8=1                                                                                                                                    subprocess.py:732
+           ===========================================================================                                                                                    run.py:160
+[17:01:31] Traceback (most recent call last):                                                                                                                      subprocess.py:681
+             File "<string>", line 1, in <module>                                                                                                                  subprocess.py:681
+             File "<frozen runpy>", line 226, in run_module                                                                                                        subprocess.py:681
+             File "<frozen runpy>", line 98, in _run_module_code                                                                                                   subprocess.py:681
+             File "<frozen runpy>", line 88, in _run_code                                                                                                          subprocess.py:681
+             File "C:\Users\paule\OneDrive\Desktop\hackEDbeta\epsilon-0\areyoumadatme\src\areyoumadatme\__main__.py", line 4, in <module>                          subprocess.py:681
+               main().main_loop()                                                                                                                                  subprocess.py:681
+             File "C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\toga\app.py", line 663, in main_loop                                             subprocess.py:681
+               self._impl.main_loop()                                                                                                                              subprocess.py:681
+             File "C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\toga_winforms\app.py", line 285, in main_loop                                    subprocess.py:681
+               raise self._exception                                                                                                                               subprocess.py:681
+             File "C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\toga_winforms\app.py", line 258, in run_app                                      subprocess.py:681
+               self.create()                                                                                                                                       subprocess.py:681
+             File "C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\toga_winforms\app.py", line 113, in create                                       subprocess.py:681
+               self.interface._startup()                                                                                                                           subprocess.py:681
+             File "C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\toga\app.py", line 624, in _startup                                              subprocess.py:681
+               self.startup()                                                                                                                                      subprocess.py:681
+             File "C:\Users\paule\OneDrive\Desktop\hackEDbeta\epsilon-0\areyoumadatme\src\areyoumadatme\app.py", line 26, in startup                               subprocess.py:681
+               on_press = self.login(main_box),                                                                                                                    subprocess.py:681
+                          ^^^^^^^^^^^^^^^^^^^^                                                                                                                     subprocess.py:681
+           TypeError: AreYouMadatMe.login() missing 1 required positional argument: 'main_box'                                                                     subprocess.py:681
+                                                                                                                                                                      __main__.py:40
+           Problem running app areyoumadatme.                                                                                                                         __main__.py:41
+
+Main thread traceback:
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\briefcase\__main__.py:25 in main                                                                                  │
+│                                                                                                                                                                                  │
+│   22 │   │   command = Command(logger=logger, console=console)                                                                                                                   │
+│   23 │   │   options = command.parse_options(extra=extra_cmdline)                                                                                                                │
+│   24 │   │   command.parse_config(Path.cwd() / "pyproject.toml")                                                                                                                 │
+│ ❱ 25 │   │   command(**options)                                                                                                                                                  │
+│   26 │   except HelpText as e:                                                                                                                                                   │
+│   27 │   │   logger.info()                                                                                                                                                       │
+│   28 │   │   logger.info(str(e))                                                                                                                                                 │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────╮                                                      │
+│ │       command = <briefcase.commands.dev.DevCommand object at 0x000002E4C20342D0>                                        │                                                      │
+│ │       Command = <class 'briefcase.commands.dev.DevCommand'>                                                             │                                                      │
+│ │       console = <briefcase.console.Console object at 0x000002E4BE7B9850>                                                │                                                      │
+│ │             e = BriefcaseCommandError('Problem running app areyoumadatme.')                                             │                                                      │
+│ │ extra_cmdline = []                                                                                                      │                                                      │
+│ │        logger = <briefcase.console.Log object at 0x000002E4BE71BE10>                                                    │                                                      │
+│ │       options = {'appname': None, 'update_requirements': False, 'run_app': True, 'test_mode': False, 'passthrough': []} │                                                      │
+│ │        result = 200                                                                                                     │                                                      │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                      │
+│                                                                                                                                                                                  │
+│ C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\briefcase\commands\dev.py:230 in __call__                                                                         │
+│                                                                                                                                                                                  │
+│   227 │   │   │   else:                                                                                                                                                          │
+│   228 │   │   │   │   self.logger.info("Starting in dev mode...", prefix=app.app_name)                                                                                           │
+│   229 │   │   │   env = self.get_environment(app, test_mode=test_mode)                                                                                                           │
+│ ❱ 230 │   │   │   return self.run_dev_app(                                                                                                                                       │
+│   231 │   │   │   │   app,                                                                                                                                                       │
+│   232 │   │   │   │   env,                                                                                                                                                       │
+│   233 │   │   │   │   test_mode=test_mode,                                                                                                                                       │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────────────── locals ───────────────────────────────────────────────────────────────╮                                          │
+│ │                 app = <com.example.areyoumadatme v0.0.1 AppConfig>                                                                  │                                          │
+│ │             appname = None                                                                                                          │                                          │
+│ │      dist_info_path = WindowsPath('C:/Users/paule/OneDrive/Desktop/hackEDbeta/epsilon-0/areyoumadatme/src/areyoumadatme.dist-info') │                                          │
+│ │                 env = {                                                                                                             │                                          │
+│ │                       │   'PYTHONPATH': 'C:\\Users\\paule\\OneDrive\\Desktop\\hackEDbeta\\epsilon-0\\areyoumadatme\\src',           │                                          │
+│ │                       │   'PYTHONMALLOC': 'default',                                                                                │                                          │
+│ │                       │   'PYTHONUNBUFFERED': '1',                                                                                  │                                          │
+│ │                       │   'PYTHONDEVMODE': '1',                                                                                     │                                          │
+│ │                       │   'PYTHONUTF8': '1'                                                                                         │                                          │
+│ │                       }                                                                                                             │                                          │
+│ │             options = {}                                                                                                            │                                          │
+│ │         passthrough = []                                                                                                            │                                          │
+│ │             run_app = True                                                                                                          │                                          │
+│ │                self = <briefcase.commands.dev.DevCommand object at 0x000002E4C20342D0>                                              │                                          │
+│ │           test_mode = False                                                                                                         │                                          │
+│ │ update_requirements = False                                                                                                         │                                          │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                          │
+│                                                                                                                                                                                  │
+│ C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\briefcase\commands\dev.py:151 in run_dev_app                                                                      │
+│                                                                                                                                                                                  │
+│   148 │   │   )                                                                                                                                                                  │
+│   149 │   │                                                                                                                                                                      │
+│   150 │   │   # Start streaming logs for the app.                                                                                                                                │
+│ ❱ 151 │   │   self._stream_app_logs(                                                                                                                                             │
+│   152 │   │   │   app,                                                                                                                                                           │
+│   153 │   │   │   popen=app_popen,                                                                                                                                               │
+│   154 │   │   │   test_mode=test_mode,                                                                                                                                           │
+│                                                                                                                                                                                  │
+│ ╭───────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────╮                                                            │
+│ │         app = <com.example.areyoumadatme v0.0.1 AppConfig>                                                        │                                                            │
+│ │   app_popen = <Popen: returncode: 1 args: ['C:\\Users\\paule\\beeware-tutorial\\beeware-ve...>                    │                                                            │
+│ │         env = {                                                                                                   │                                                            │
+│ │               │   'PYTHONPATH': 'C:\\Users\\paule\\OneDrive\\Desktop\\hackEDbeta\\epsilon-0\\areyoumadatme\\src', │                                                            │
+│ │               │   'PYTHONMALLOC': 'default',                                                                      │                                                            │
+│ │               │   'PYTHONUNBUFFERED': '1',                                                                        │                                                            │
+│ │               │   'PYTHONDEVMODE': '1',                                                                           │                                                            │
+│ │               │   'PYTHONUTF8': '1'                                                                               │                                                            │
+│ │               }                                                                                                   │                                                            │
+│ │ main_module = 'areyoumadatme'                                                                                     │                                                            │
+│ │     options = {}                                                                                                  │                                                            │
+│ │ passthrough = []                                                                                                  │                                                            │
+│ │        self = <briefcase.commands.dev.DevCommand object at 0x000002E4C20342D0>                                    │                                                            │
+│ │   test_mode = False                                                                                               │                                                            │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                            │
+│                                                                                                                                                                                  │
+│ C:\Users\paule\beeware-tutorial\beeware-venv\Lib\site-packages\briefcase\commands\run.py:190 in _stream_app_logs                                                                 │
+│                                                                                                                                                                                  │
+│   187 │   │   │   │   # If we're monitoring an actual app (not just a log stream),                                                                                               │
+│   188 │   │   │   │   # and the app didn't exit cleanly, surface the error to the user.                                                                                          │
+│   189 │   │   │   │   if popen.returncode != 0:                                                                                                                                  │
+│ ❱ 190 │   │   │   │   │   raise BriefcaseCommandError(f"Problem running app {app.app_name}.")                                                                                    │
+│   191 │   │                                                                                                                                                                      │
+│   192 │   │   except KeyboardInterrupt:                                                                                                                                          │
+│   193 │   │   │   pass  # Catch CTRL-C to exit normally                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────── locals ─────────────────────────────────────────────╮                                                                              │
+│ │          app = <com.example.areyoumadatme v0.0.1 AppConfig>                                     │                                                                              │
+│ │ clean_filter = None                                                                             │                                                                              │
+│ │ clean_output = False                                                                            │                                                                              │
+│ │  exit_filter = <function LogFilter.test_filter.<locals>.filter_func at 0x000002E4C20174C0>      │                                                                              │
+│ │   log_filter = <briefcase.commands.run.LogFilter object at 0x000002E4C2076910>                  │                                                                              │
+│ │   log_stream = False                                                                            │                                                                              │
+│ │        popen = <Popen: returncode: 1 args: ['C:\\Users\\paule\\beeware-tutorial\\beeware-ve...> │                                                                              │
+│ │         self = <briefcase.commands.dev.DevCommand object at 0x000002E4C20342D0>                 │                                                                              │
+│ │    stop_func = <function RunAppMixin.<lambda> at 0x000002E4C2016AC0>                            │                                                                              │
+│ │    test_mode = False                                                                            │                                                                              │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseCommandError: Problem running app areyoumadatme.

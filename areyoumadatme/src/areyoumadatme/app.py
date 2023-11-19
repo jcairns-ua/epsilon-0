@@ -9,7 +9,8 @@ from toga.style.pack import COLUMN, ROW
 class AreYouMadatMe(toga.App):
 
     def startup(self):
-        main_box = toga.Box(style=Pack(direction=COLUMN))
+        self.main_box = toga.Box(style=Pack(direction=COLUMN))
+        self.box = toga.Box()
 
         name_label = toga.Label(
             "Are You Mad at Me?",
@@ -23,8 +24,8 @@ class AreYouMadatMe(toga.App):
 
         login_button = toga.Button(
             "Login",
-            on_press=self.login,
-            style=Pack(padding=5)
+            on_press = self.login,
+            style=Pack(padding=5)            
         )
 
         signup_button = toga.Button(
@@ -33,24 +34,29 @@ class AreYouMadatMe(toga.App):
             style=Pack(padding=5)
         )
 
-        main_box.add(name_box)
-        main_box.add(login_button)
-        main_box.add(signup_button)
+        self.box.add(name_box)
+        self.box.add(login_button)
+        self.box.add(signup_button)
+        
+        self.main_box.add(self.box)
 
         self.main_window = toga.MainWindow(title=self.formal_name)
-        self.main_window.content = main_box
+        self.main_window.content = self.main_box
         self.main_window.show()
-
-    def login(self):
-        #idk
+        
+    def login(self, sender):
+        self.main_box.remove(self.box)
+        print("swag")
+        slay = toga.Box(style=Pack(direction=COLUMN))
+        name_label = toga.Label(
+            "stay mad?",
+            style=Pack(padding=(0, 5))
+        )
         
         
-    def login(self, widget):
-        print(f"swag")
-        self.login()
 
     def signup(self, widget):
-        print(f"no swag")
+        print("no swag")
 
 
 def main():
