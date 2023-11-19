@@ -9,8 +9,8 @@ from toga.style.pack import COLUMN, ROW
 class AreYouMadatMe(toga.App):
 
     def startup(self):
-        self.main_box = toga.Box(style=Pack(direction=COLUMN))
-        self.box = toga.Box()
+        self.main_box = toga.Box(style=Pack(direction=COLUMN, background_color="#704C5E"))
+        self.box = toga.Box(style=Pack(background_color="#704C5E"))
 
         name_label = toga.Label(
             "Are You Mad at Me?",
@@ -25,13 +25,13 @@ class AreYouMadatMe(toga.App):
         login_button = toga.Button(
             "Login",
             on_press = self.login,
-            style=Pack(padding=5)            
+            style=Pack(padding=5, background_color="#704C5E")            
         )
 
         signup_button = toga.Button(
             "Sign Up",
             on_press=self.signup,
-            style=Pack(padding=5)
+            style=Pack(padding=5, background_color="#704C5E")
         )
 
         self.box.add(name_box)
