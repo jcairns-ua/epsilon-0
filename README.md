@@ -8,3 +8,6 @@ B0BFBE
 F1C8DB
 704C5E
 44344F
+
+accounts.txt in format
+name,username,email,password
