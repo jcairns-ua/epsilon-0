@@ -77,7 +77,7 @@ class AreYouMadatMe(toga.App):
 
     def enter_login(self, widget):
         print(f"Hiiii, {self.usern_input.value} and {self.password_input.value}")
-        self.main_page(widget)
+        self.default_page(widget)
         #call the check function returns true or false into logged
         """
         if logged:
@@ -133,9 +133,9 @@ class AreYouMadatMe(toga.App):
 
     def enter_signin(self, widget):
         print(f"Hiiii, {self.name_input.value} and {self.email_input.value} {self.usern_input.value} {self.password_input.value}")
-        self.main_page(widget)
+        self.default_page(widget)
 
-    def main_page(self, widget):
+    def default_page(self, widget):
         self.main_box.remove(self.box_login, self.enter_button)
         next_check = toga.Label("Time Till Next Check:", style=Pack(padding=(0,5), background_color="#44344F", color="#F1C8DB"))
         self.default_page = toga.Box(style=Pack(direction=COLUMN, padding=5))
